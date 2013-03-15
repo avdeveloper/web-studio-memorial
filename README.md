@@ -1,5 +1,6 @@
 # Design your digital memorial
 For class, we had to design our own digital tombstone. Sounds depressing, but it was actually quite fun to put into practice cool new CSS3 animations
+
 (c)2011 Albert Villaroman <avdeveloper@gmai.com>
 
 ## Topics/Technoligies learned
