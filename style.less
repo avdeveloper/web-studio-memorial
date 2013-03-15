@@ -1,0 +1,171 @@
+html, body, div, ul, p { margin: 0; padding: 0; }
+
+body { font-family: "Century Gothic", sans-serif; background: #604627; }
+
+section#row_1 {
+  padding-bottom: 80px;
+  background: #efefef;
+
+  h1 {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 640px;
+    height: 194px;
+    overflow: hidden;
+    position: relative;
+    
+    > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    
+    p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      
+      img {
+        margin-left: -8px;
+        margin-top: -8px;
+        width: 64px;
+        height: 64px;
+      }
+      
+    }
+    
+  }
+
+  button {
+    position: absolute;
+    top: 320px;
+    width: 104px;
+    height: 94px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button#prev {
+    left: 15%;
+    background: url("images/prev_btn.png") no-repeat top left;
+  }
+  
+  button#next {
+    right: 15%;
+    background: url("images/next_btn.png") no-repeat top left;
+  }
+
+  > div {
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+    height: 640px;
+    overflow: hidden;
+    
+    img.mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    
+  }
+  
+  .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      width: 640px;
+      height: 640px;
+      
+      li {
+        height: 128px;
+        overflow: hidden;
+      }
+      
+      img {
+        margin-left: -5px; /* TODO: I have to put this or else there will be gaps in between pictures */
+        width: 128px;
+        height: 128px;
+      }
+      
+      &:first-child { left: 0px; }
+      &:nth-child(2) { left: 640px; }
+      &:last-child { left: 1280px; }
+     
+    }
+     
+  }
+  
+}
+
+section#row_2 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: #30210f; /* Old browsers */
+  background: -moz-linear-gradient(top, #30210f 0%, #604627 53%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#30210f), color-stop(53%,#604627)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #30210f 0%,#604627 53%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #30210f 0%,#604627 53%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #30210f 0%,#604627 53%); /* IE10+ */
+  background: linear-gradient(top, #30210f 0%,#604627 53%); /* W3C */
+  
+  > div {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 960px;
+  }
+  
+  h2 {
+    margin-left: 10px;
+    color: white;
+    font-size: 1.8em;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  p {
+    display: inline-block;
+    margin: 10px;
+    width: 290px;
+    height: 180px;
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    
+    span {
+      position: relative;
+      bottom: -200px;
+      text-shadow: 2px 2px 5px #000;
+    }
+  }
+  
+  p#facebook {
+    background: url("images/logos/facebook.jpg") #0154a0 no-repeat center;
+    background-size: 300px;
+  }
+  
+  p#twitter {
+    background: url("images/logos/twitter.png") #33ccff no-repeat center;
+    background-size: 240px;
+  }
+  
+  p#google {
+    background: url("images/logos/google.jpg") white no-repeat center;
+    background-size: 300px;
+  }
+}
